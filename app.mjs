@@ -1,15 +1,12 @@
 import express from 'express'
-import homepage from './routes/home.mjs'
-import aboutpage from './routes/about.mjs'
-
-const app = express()
+import home from './routes/home.mjs'
 const port = process.env.PORT || 3000;
+const app = express()
 
-app.use('/',homepage)
-app.use('/about',aboutpage)
+app.use(express.static('public'))
 
+app.use('/',home)
 
 app.listen(port,()=>{
-
-    console.log(`server is up on http://localhost:${port}`)
+    console.log(`server up on http://localhost:${port}`)
 })
