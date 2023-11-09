@@ -1,6 +1,5 @@
-import {join} from 'path'
 const homeController = (req,res)=>{
-    res.sendFile(join(process.cwd(),'views','index.html'))
+    res.render('home.ejs',{'name':'nigger'})
 }
 
 export {homeController}
