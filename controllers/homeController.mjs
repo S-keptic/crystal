@@ -1,5 +1,6 @@
 const homeController = (req,res)=>{
-    res.render('home.ejs',{'name':'foo'})
+
+res.send('home.ejs')
 }
 
 export {homeController}

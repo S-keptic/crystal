@@ -1,6 +1,8 @@
 import express from 'express'
-const router = express.Router()
 import { aboutController } from '../controllers/aboutController.mjs'
+const router = express.Router()
+
+
 
 router.get('/about',aboutController)
 

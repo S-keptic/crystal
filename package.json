@@ -6,7 +6,6 @@
   "scripts": {
     "start": "nodemon app.mjs"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
